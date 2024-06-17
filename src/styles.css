@@ -1,0 +1,205 @@
+body {
+  background: url("https://cdn.wallpapersafari.com/59/26/AMR5V0.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 9s ease;
+  animation: background-animation 60s linear infinite; /* Added animation */
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: center center;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+.app-container {
+  background: rgba(15, 15, 15, 0.301);
+  border: 1px solid rgba(44, 193, 185, 0.66);
+  border-radius: 30px;
+  box-shadow: 0 30px 50px rgba(57, 114, 158, 0.5);
+  margin: 50px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 200px;
+}
+
+.search-form-input {
+  background-color: whitesmoke;
+  border: 1px solid rgba(16, 71, 69, 0.66);
+  border-radius: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  padding: 10px 30px;
+  width: 80%;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  color: rgb(18, 15, 33); /* Changed text color to white */
+}
+
+.search-form-button {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(17, 68, 66, 0.66);
+  border-radius: 30px;
+  color: rgba(17, 68, 66, 0.66);
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  color: rgb(32, 68, 76); /* Changed text color to white */
+}
+
+.search-form-button:hover {
+  background: rgba(17, 68, 66, 0.66);
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  margin: 10px;
+  color: rgb(255, 255, 255); /* Changed text color to white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.29);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 52px;
+  margin: 0;
+  color: white; /* Changed text color to white */
+  cursor: pointer;
+}
+
+.weather-temp-container {
+  display: flex;
+  justify-content: end;
+  color: rgb(156, 10, 10); /* Changed text color to white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.weather-temp-value {
+  font-size: 88px;
+  margin: auto;
+  color: rgb(247, 247, 247); /* Changed text color to white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.weather-temp-units {
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  top: -15px;
+  color: white; /* Changed text color to white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  text-align: center;
+  padding: auto 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto 40px;
+  color: rgb(255, 255, 255); /* Changed text color to white */
+  transition: color 0.3s ease;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.29);
+  border-radius: 10px;
+}
+
+.forecast-icon {
+  font-size: 55px;
+  color: white; /* Changed text color to white */
+  transition: color 0.3s ease;
+  border: 1px solid transparent;
+  animation: blink-animation 1s infinite; /* Added blinking animation */
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 30px 0 0;
+  color: white; /* Changed text color to white */
+  transition: color 0.3s ease;
+}
+
+footer a {
+  text-decoration: none;
+
+  color: white; /* Changed text color to white */
+  transition: color 0.3s ease;
+}
+
+.app-container:hover {
+  box-shadow: 0 30px 50px rgba(57, 114, 158, 0.8);
+}
+
+.search-form-input:hover {
+  background-color: #f0f0f0;
+  border-color: rgba(16, 71, 69, 0.8);
+}
+
+.search-form-button:hover {
+  background: rgba(17, 68, 66, 0.8);
+  color: white;
+}
+
+main:hover,
+h1:hover,
+.weather-temp-container:hover,
+.weather-temp-icon:hover,
+.weather-temp-value:hover,
+.weather-temp-units:hover,
+.weather-forecast:hover,
+.forecast-icon:hover,
+footer:hover,
+footer a:hover {
+  color: white;
+}
